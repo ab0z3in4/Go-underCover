@@ -45,8 +45,6 @@ enable_undercover() {
 	cp -r $CONF_FILES/* ~/.config/
 	[ -f ~/.face ] && mv ~/.face ~/.face.undercover
 	printf ': undercover && export PS1='\''C:${PWD//\//\\\\\}> '\''\n' >> ~/.bashrc
-    printf ': undercover && export PS1='\''C:${PWD//\//\\\\}> '\''\n' >> ~/.zshrc
-	printf ': undercover && new_line_before_prompt=no\n' >> ~/.zshrc
     sudo windows_shell_theme_root enable
 }
 
@@ -60,7 +58,7 @@ disable_undercover() {
 		'mv "$1" "$(echo $1 | sed 's/.undercover//')"' _ {} \;
 	[ -f ~/.face.undercover ] && mv ~/.face.undercover ~/.face
 	rm $DIR/lock
-	sed -i -e '/: undercover/d' ~/.bashrc ~/.zshrc
+	sed -i -e '/: undercover/d' ~/.bashrc
     sudo windows_shell_theme_root disable
 }
 
