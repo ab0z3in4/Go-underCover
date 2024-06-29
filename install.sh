@@ -62,12 +62,10 @@ function install {
     rsync -a --progress go-undercover.svg /usr/share/icons
     rsync -a --progress go-undercover.sh /usr/bin/go-undercover
     rsync -a --progress windows_shell_theme_root.sh /usr/bin/windows_shell_theme_root
-    rsync -a --progress go-undercover.desktop /usr/share/applications/
     chmod 755 /usr/share/icons/go-undercover.svg
     chmod 775 /usr/share/go-undercover
     chmod 775 /usr/bin/go-undercover
     chmod 775 /usr/bin/windows_shell_theme_root
-    chmod 775 /usr/share/applications/go-undercover.desktop
     # Cleaning
     #Kech nhar
     # RUN
