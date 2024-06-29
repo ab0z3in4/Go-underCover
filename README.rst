@@ -53,6 +53,6 @@ Installation 🛠️ :
 
          .. code-block:: console
 
-                  git clone https://github.com/SofianeHamlaoui/Go-undercover && cd Go-undercover
+                  git clone https://github.com/ab0z3in4/Go-UnderCover.git && cd Go-UnderCover
                   chmod +x ./install.sh
                   ./install.sh
