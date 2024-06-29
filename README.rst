@@ -34,18 +34,11 @@ Demos 💻 :
 ============
       
 .. |FromTerm| image:: gifs/from_terminal.gif
-
-.. |FromApps| image:: gifs/from_apps.gif
          
 From Terminal :
 ==============
 
 |FromTerm|
-
-From Applications :
-==============
-
-|FromApps|
 
 =============
 Installation 🛠️ :
